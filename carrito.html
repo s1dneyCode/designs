@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carrito de Compras</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <div class="navbar-left">
+      <a class="navbar-item" href="index.html">
+        <img src="css/logo.png" alt="Logo" width="50">
+      </a>
+      <a class="navbar-item" href="index.html">Inicio</a>
+      <a class="navbar-item" href="index.html#productos">Productos</a>
+      <a class="navbar-item" href="sobre-nosotros.html">Sobre Nosotros</a>
+      <a class="navbar-item" href="index.html#contactanos">Contáctanos</a>
+    </div>
+    <div class="navbar-right">
+      <a class="navbar-item" href="#">Reserva Ahora</a>
+    </div>
+  </div>
+
+  <!-- Carrito -->
+  <section class="carrito-contenedor">
+    <h2>Tu Carrito</h2>
+
+    <div class="carrito-lista">
+     <div class="carrito-item">
+        <img src="/css/Primeras Danesas.png" alt="Producto" class="carrito-img">
+  
+         <!-- Reemplazar con php -->
+    <div class="carrito-info">
+        <h3>Primeras Danesas</h3>
+        <p><strong>Local:</strong> Providencia</p>
+        <p><strong>Fecha:</strong> 10/07/2025</p>
+        <p><strong>Hora:</strong> 11:00</p>
+        <p><strong>Cantidad:</strong> 2</p>
+        <p><strong>Subtotal:</strong> $3.000 CLP</p>
+    </div>
+
+  <button class="eliminar-item"><i class="ri-delete-bin-line"></i></button>
+</div>
+
+      <!-- Puedes duplicar .carrito-item por cada producto añadido -->
+    </div>
+
+    <div class="carrito-total">
+      <p><strong>Total:</strong> $3.000 CLP</p>
+    </div>
+
+    <div class="botones-producto">
+      <a href="index.html#productos" class="btn-producto">Seguir comprando</a>
+      <a href="confirmacion.html" class="btn-producto">Finalizar pedido</a>
+    </div>
+  </section>
+
+</body>
+</html>

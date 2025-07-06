@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
     <title>Inicio - Pasteleria</title>
 </head>
 <body>
@@ -16,16 +18,22 @@
             </div>
         
         <div class="navbar-item" style="padding-left: 40px;">Inicio</div>    
-        <div class="navbar-item">Productos</div>    
-        <div class="navbar-item">Sobre Nosotros</div>    
-        <div class="navbar-item">Contactanos</div> 
+        <a class="navbar-item" href="#productos">Productos</a> 
+        <a class="navbar-item" href="sobre-nosotros.html">Sobre Nosotros</a>
+        <a class="navbar-item" href="#contactanos">Contáctanos</a>
         </div>
 
         <div class="navbar-right">
-        <div class="navbar-item">Reserva Ahora</div>
+        <a class="navbar-item" href="carrito.html">Ver Carrito</a>
+
     </div>
 
     </div>
+
+<button id="scrollTopBtn" title="Volver arriba">
+  <i class="ri-arrow-up-line"></i>
+</button>
+
 <div class="inicio">
         <div class="inicio-item">
             <img src="/css/producto 1.png"
@@ -39,7 +47,7 @@
         </div>
 </div>
 
-<div class="productos">
+<div class="productos" id="productos">
   <h2>Nuestros Productos</h2>
   <div class="productos-grid">
 
@@ -47,7 +55,7 @@
       <img src="/css/Primeras Danesas.png" alt="Producto 1">
       <h3>Primeras Danesas</h3>
       <p>$1.500 CLP</p>
-      <button>Ver stock</button>
+      <button onclick="location.href='producto.html'">Ver stock</button>
     </div>
 
     <div class="producto-card">
@@ -69,7 +77,26 @@
   </div>
 </div>
 
+ <!-- Contactanos -->
+
+<section class="contacto-central" id="contactanos">
+  <h2>Contáctanos</h2>
+  <div class="contacto-box">
+    <ul class="lista-contacto">
+      <li><i class="ri-map-pin-line"></i> Local Providencia: Av. Nueva Providencia 1234, Santiago</li>
+      <li><i class="ri-map-pin-line"></i> Local Ñuñoa: Irarrázaval 5678, Santiago</li>
+      <li><i class="ri-instagram-line"></i> Instagram: @panaderia.madeleine</li>
+      <li><i class="ri-phone-line"></i> Teléfono: +56 9 1234 5678</li>
+    </ul>
+  </div>
+</section>
 
 
+<script src="scripts.js"></script>
 </body>
+
+<footer class="footer">
+  <p>&copy;2025 Panadería Madeleine. Todos los derechos reservados.</p>
+</footer>
+
 </html>
